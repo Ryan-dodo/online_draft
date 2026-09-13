@@ -1,83 +1,79 @@
 <!DOCTYPE html>
-<html lang="zh_CN">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>hello</title>
-    <style>
-        /* 卡片样式 */
-        .card {
-            background-color: #ffffff;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            max-width: 400px;
-            text-align: center;
-        }
-
-        /* 标题样式 */
-        .card h1 {
-            color: #333;
-            margin-bottom: 15px;
-        }
-
-        /* 正文样式 */
-        .card p {
-            color: #666;
-            line-height: 1.6;
-        }
-        /* 1. 网页整体基础设置 */
-        body {
-            font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
-            background-color: #f9f9f9;
-            color: #333;
-            line-height: 1.6; /* 增加行高，让文字不拥挤 */
-            padding: 40px; /* 让内容不要紧贴屏幕边缘 */
-            max-width: 800px; /* 限制最大宽度，适合阅读 */
-            margin: 0 auto; /* 内容居中 */
-        }
-
-        /* 2. 标题 (h1-h6) 样式 */
-        h1, h2, h3, h4, h5, h6 {
-            color: #1a1a1a; /* 标题颜色更深，增加层次感 */
-            margin-top: 1.5em; /* 标题上方留出空间 */
-            margin-bottom: 0.8em; /* 标题下方留出空间 */
-            font-weight: 600; /* 稍微加粗一点 */
-        }
-        h1 { font-size: 2em; border-bottom: 2px solid #eee; padding-bottom: 0.3em; } /* h1 加一条底线 */
-        h2 { font-size: 1.6em; }
-        h3 { font-size: 1.3em; }
-
-        /* 3. 段落 (p) 样式 */
-        p {
-            font-size: 1em;
-            color: #444; /* 正文颜色稍微浅一点，不刺眼 */
-            margin-bottom: 1.2em; /* 段落之间保持间距 */
-            text-align: justify; /* 两端对齐，排版更整齐 */
-        }
-
-        /* 4. 链接 (a) 样式（作为补充） */
-        a {
-            color: #007bff;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sini and Ryan</title>
+    <!-- 链接外部 CSS 文件 -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="container">
+        <h1>欢迎来到Sini and Ryan的网页</h1>
+        <p>这是一个基础的 HTML、CSS 和 JS 模板网站，Ryan将在此基础上进行开发。</p>
 
+    </div>
 
+    <div class="container">
+    <h1 id="main-title">写给你的情话</h1>
 
- <div class="card">
-        <h1>欢迎来到我的网站</h1>
-        <p id="msg">这是一个通过 CSS 嵌入到 HTML 中的简单卡片样式。你可以直接在服务器上使用 nano 或 vim 编辑器修改这段代码。</p>
-     <button onclick="changeText()">click me</button>
- </div>
-<script>
-    function changeText(){
-        document.getElementById('msg').textContent = 'clicked'
-    }
-</script>
+    <!-- 情话展示区域 -->
+    <div class="love-quotes">
+        <p>我喜欢春天的花，也喜欢夏夜的风，</p>
+        <p>但遇见你以后，才知道，心动原来有名字。</p>
+
+        <p>月亮可以藏进云里，晚风可以路过山岗，</p>
+        <p>而我藏不住的，是每一次想起你时，嘴角的温柔。</p>
+
+        <p>我想把日子过得慢一点，</p>
+        <p>慢到一场黄昏足够看很久，慢到一句晚安可以听很多遍。</p>
+
+        <p>如果喜欢有形状，</p>
+        <p>我想它大概是你站在我面前时，眼睛里刚好有光的模样。</p>
+
+        <p>人海那么大，遇见的人那么多，</p>
+        <p>可偏偏是你，让我愿意把余生的故事，慢慢写下去。</p>
+
+        <p>我不问月亮会不会永远圆，</p>
+        <p>也不问花会不会永远开，</p>
+        <p>我只希望往后的每一个寻常日子里，</p>
+        <p>都有机会和你分享一点欢喜。</p>
+
+        <p>如果夜色太深，星星不够亮，</p>
+        <p>那就让我陪你走一段，直到天边重新有光。</p>
+
+        <p>我想见你，不只是晴天，</p>
+        <p>也想见你在下雨的时候，看看你撑伞的样子，</p>
+        <p>看看雨落在你肩头，替你记住这个温柔的傍晚。</p>
+
+        <p>有时候我觉得，所谓喜欢，</p>
+        <p>不是轰轰烈烈地奔向一个人，</p>
+        <p>而是在无数个平凡的瞬间里，第一时间想到了你。</p>
+
+        <p>若有一天我们走过很多地方，</p>
+        <p>看过很多风景，</p>
+        <p>我希望回头的时候，你还在我身边。</p>
+
+        <p>我想和你看一次日落，</p>
+        <p>再看一次日出，</p>
+        <p>然后发现，原来最美的风景，从来不是远方。</p>
+
+        <p>你像一阵不经意的风，</p>
+        <p>吹过我的寻常岁月，</p>
+        <p>却让往后的每一天，都有了值得期待的方向。</p>
+
+        <p>如果可以，我想把“以后”这两个字说得具体一点：</p>
+        <p>是晚饭后的散步，是雨天共撑的一把伞，</p>
+        <p>是睡前最后一句晚安，也是清晨醒来第一句想说的话。</p>
+
+        <p>我没有那么多华丽的词，</p>
+        <p>只想在漫长的人生里，认真喜欢一个人。</p>
+        <p>而那个人，如果是你，我会觉得刚刚好。</p>
+    </div>
+
+    <button id="my-btn">点击测试 JS</button>
+</div>
+    <!-- 链接外部 JS 文件（放在 body 底部以确保页面加载完成） -->
+    <script src="script.js"></script>
 </body>
 </html>
