@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // 为按钮添加点击事件
     btn.addEventListener('click', function() {
         // title.textContent = 'JS 链接成功！';
-        title.style.color = '#28a745';
+        // title.style.color = '#28a745';
         alert('JavaScript 已经成功运行！');
     });
 });
