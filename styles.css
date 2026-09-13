@@ -85,3 +85,8 @@ button:hover {
     border-radius: 2px;
     opacity: 0.8;
 }
+.signature {
+    text-align: right;
+    margin-top: 30px;
+    padding-right: 20px;
+}
