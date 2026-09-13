@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <title>hello</title>
+    <style>
+        /* 卡片样式 */
+        .card {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            text-align: center;
+        }
+
+        /* 标题样式 */
+        .card h1 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        /* 正文样式 */
+        .card p {
+            color: #666;
+            line-height: 1.6;
+        }
+        /* 1. 网页整体基础设置 */
+        body {
+            font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6; /* 增加行高，让文字不拥挤 */
+            padding: 40px; /* 让内容不要紧贴屏幕边缘 */
+            max-width: 800px; /* 限制最大宽度，适合阅读 */
+            margin: 0 auto; /* 内容居中 */
+        }
+
+        /* 2. 标题 (h1-h6) 样式 */
+        h1, h2, h3, h4, h5, h6 {
+            color: #1a1a1a; /* 标题颜色更深，增加层次感 */
+            margin-top: 1.5em; /* 标题上方留出空间 */
+            margin-bottom: 0.8em; /* 标题下方留出空间 */
+            font-weight: 600; /* 稍微加粗一点 */
+        }
+        h1 { font-size: 2em; border-bottom: 2px solid #eee; padding-bottom: 0.3em; } /* h1 加一条底线 */
+        h2 { font-size: 1.6em; }
+        h3 { font-size: 1.3em; }
+
+        /* 3. 段落 (p) 样式 */
+        p {
+            font-size: 1em;
+            color: #444; /* 正文颜色稍微浅一点，不刺眼 */
+            margin-bottom: 1.2em; /* 段落之间保持间距 */
+            text-align: justify; /* 两端对齐，排版更整齐 */
+        }
+
+        /* 4. 链接 (a) 样式（作为补充） */
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+
+
+ <div class="card">
+        <h1>欢迎来到我的网站</h1>
+        <p id="msg">这是一个通过 CSS 嵌入到 HTML 中的简单卡片样式。你可以直接在服务器上使用 nano 或 vim 编辑器修改这段代码。</p>
+     <button onclick="changeText()">click me</button>
+ </div>
+<script>
+    function changeText(){
+        document.getElementById('msg').textContent = 'clicked'
+    }
+</script>
+</body>
+</html>
